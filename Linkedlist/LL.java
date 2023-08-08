@@ -1,6 +1,8 @@
 package Linkedlist;
 
 public class LL {
+    //LinkedList<Integer> list = new LinkedList();
+//    list.add(34);
 
     private Node head;
     private Node tail;
@@ -27,6 +29,8 @@ public class LL {
             insertFirst(val);
             return;
         }
+        //what is benefit of taking extra(tail) variable,it helps us if we put val into the last variable we can do that in contsant time.
+
         Node node = new Node(val);
         tail.next = node;
         tail = node;
@@ -111,7 +115,7 @@ public class LL {
         }
         return node;
     }
-
+    //delete at particular index
     public int delete(int index) {
         if (index == 0) {
             return deleteFirst();
@@ -325,7 +329,7 @@ public class LL {
 //
 //        list.display();
 //        list.duplicates();
-//        list.display();
+//         list.display();
 
         //merge
         LL first = new LL();
